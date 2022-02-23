@@ -1,0 +1,39 @@
+{% extends '_layout.html' %}
+
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+
+{% block body %}
+
+<h2>Rgeistered Students</h2>
+<h3>The following students have registered for student organizations</h3>
+<table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th>Organization</th>
+    </tr>
+    <tr>
+      <td>{{names[0]}}</td>
+      <td>{{orgs[0]}}</td>
+    </tr>
+    <tr>
+        <td>{{names[1]}}</td>
+        <td>{{orgs[1]}}</td>
+      </tr>
+      <tr>
+        <td>{{names[2]}}</td>
+        <td>{{orgs[2]}}</td>
+      </tr>
+      <tr>
+        <td>{{names[3]}}</td>
+        <td>{{orgs[3]}}</td>
+      </tr>
+      <tr>
+        <td>{{names[4]}}</td>
+        <td>{{orgs[4]}}</td>
+      </tr>
+  </table>
+{% endblock %}

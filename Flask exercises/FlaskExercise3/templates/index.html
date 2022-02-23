@@ -1,0 +1,14 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+<h1>Register </h1>
+<h2>Use the following form to register for a student organization<h2>
+<h3>Name<h3>
+    <form action="/submit" method="post">
+    <input type="text" name="name" id="name" autocomplete="off">
+<h4>Organization<h4>
+    <form action="/submit" method="post">
+    <input type="text" name="org" id="org" autocomplete="off">
+    <input type="submit" value="Submit">   
+</form>
+{% endblock %}
